@@ -1,0 +1,8 @@
+Facade Pattern: The primary design pattern used in the implementation is the Facade Pattern. This pattern provides a unified interface to a set of interfaces in a subsystem, thus simplifying the usage of complex systems. In this implementation, the LibraryFacade acts as a simplified interface that hides the complexities of the underlying subsystems, namely the BookInventory and UserManagement.
+Subsystems: Two subsystems are created to manage the functionality of the library system.
+BookInventory: This subsystem is responsible for managing the books available in the library. It provides methods to search for books by title or author, borrow and return books, and check the availability of a book.
+UserManagement: This subsystem handles user authentication. It verifies the login credentials provided by users.
+Unified Interface: The LibraryFacade interface provides simplified interface for users to interact with the system. Users do not need to directly interact with the underlying subsystems, reducing complexity and potential errors.
+Encapsulation of Complexity: The facade encapsulates the complex interactions and operations of the underlying subsystems (BookInventory and UserManagement). Users only need to know about high-level operations such as borrowing books or searching for titles, without needing to understand the internal workings of the system.
+Abstraction of Implementation Details: The facade shields users from the implementation details of the subsystems. For example, users do not need to know about the data structures used to store books or the authentication mechanism used for user management.
+Improved Maintainability: By providing a clear separation between the facade and the subsystems the system becomes more maintainable.
